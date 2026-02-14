@@ -1,311 +1,31 @@
-// ===================================
+// ==========================================
 // MOVIE DATABASE
-// ===================================
+// ==========================================
+
 const moviesDatabase = [
-    // Tamil Action Movies
+    {
+        title: "Master",
+        year: 2021,
+        quality: "HD",
+        category: ["Tamil", "Action"],
+        image: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400&h=600&fit=crop",
+        telegramLink: "https://t.me/askmovies"
+    },
     {
         title: "Vikram",
         year: 2022,
         quality: "HD",
         category: ["Tamil", "Action"],
-        image: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400&h=600&fit=crop",
-        telegramLink: "https://t.me/askmovies/vikram"
-    },
-    {
-        title: "Leo",
-        year: 2023,
-        quality: "HD",
-        category: ["Tamil", "Action"],
         image: "https://images.unsplash.com/photo-1594908900066-3f47337549d8?w=400&h=600&fit=crop",
-        telegramLink: "https://t.me/askmovies/leo"
+        telegramLink: "https://t.me/askmovies"
     },
     {
         title: "Varisu",
         year: 2023,
         quality: "PreDvd",
         category: ["Tamil"],
-        image: "https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?w=400&h=600&fit=crop",
-        telegramLink: "https://t.me/askmovies/varisu"
-    },
-    {
-        title: "Jailer",
-        year: 2023,
-        quality: "HD",
-        category: ["Tamil", "Action"],
-        image: "https://images.unsplash.com/photo-1574267432644-f610a5804a31?w=400&h=600&fit=crop",
-        telegramLink: "https://t.me/askmovies/jailer"
-    },
-    {
-        title: "Master",
-        year: 2021,
-        quality: "HD",
-        category: ["Tamil", "Action"],
-        image: "https://images.unsplash.com/photo-1585951237318-9ea5e175b891?w=400&h=600&fit=crop",
-        telegramLink: "https://t.me/askmovies/master"
-    },
-    
-    // English Action Movies
-    {
-        title: "John Wick 4",
-        year: 2023,
-        quality: "HD",
-        category: ["English", "Action"],
-        image: "https://images.unsplash.com/photo-1611419010196-a425a5b4e3d4?w=400&h=600&fit=crop",
-        telegramLink: "https://t.me/askmovies/johnwick4"
-    },
-    {
-        title: "Mission Impossible 7",
-        year: 2023,
-        quality: "HD",
-        category: ["English", "Action"],
-        image: "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=400&h=600&fit=crop",
-        telegramLink: "https://t.me/askmovies/mi7"
-    },
-    {
-        title: "The Batman",
-        year: 2022,
-        quality: "HD",
-        category: ["English", "Action"],
-        image: "https://images.unsplash.com/photo-1509347528160-9a9e33742cdb?w=400&h=600&fit=crop",
-        telegramLink: "https://t.me/askmovies/batman"
-    },
-    {
-        title: "Top Gun Maverick",
-        year: 2022,
-        quality: "HD",
-        category: ["English", "Action"],
-        image: "https://images.unsplash.com/photo-1534447677768-be436bb09401?w=400&h=600&fit=crop",
-        telegramLink: "https://t.me/askmovies/topgun"
-    },
-    {
-        title: "Avatar 2",
-        year: 2022,
-        quality: "HD",
-        category: ["English", "Action"],
-        image: "https://images.unsplash.com/photo-1616530940355-351fabd9524b?w=400&h=600&fit=crop",
-        telegramLink: "https://t.me/askmovies/avatar2"
-    },
-    
-    // More Tamil Movies
-    {
-        title: "Ponniyin Selvan",
-        year: 2022,
-        quality: "HD",
-        category: ["Tamil"],
-        image: "https://images.unsplash.com/photo-1595769816263-9b910be24d5f?w=400&h=600&fit=crop",
-        telegramLink: "https://t.me/askmovies/ps1"
-    },
-    {
-        title: "Valimai",
-        year: 2022,
-        quality: "PreDvd",
-        category: ["Tamil", "Action"],
-        image: "https://images.unsplash.com/photo-1608889476561-6242cfdbf622?w=400&h=600&fit=crop",
-        telegramLink: "https://t.me/askmovies/valimai"
-    },
-    {
-        title: "Beast",
-        year: 2022,
-        quality: "HD",
-        category: ["Tamil", "Action"],
-        image: "https://images.unsplash.com/photo-1606603696914-3b6e28c57f97?w=400&h=600&fit=crop",
-        telegramLink: "https://t.me/askmovies/beast"
-    },
-    {
-        title: "Don",
-        year: 2022,
-        quality: "HD",
-        category: ["Tamil"],
-        image: "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=400&h=600&fit=crop",
-        telegramLink: "https://t.me/askmovies/don"
-    },
-    {
-        title: "Kaithi",
-        year: 2019,
-        quality: "HD",
-        category: ["Tamil", "Action"],
-        image: "https://images.unsplash.com/photo-1518676590629-3dcbd9c5a5c9?w=400&h=600&fit=crop",
-        telegramLink: "https://t.me/askmovies/kaithi"
-    },
-    
-    // More English Movies
-    {
-        title: "Spider-Man No Way Home",
-        year: 2021,
-        quality: "HD",
-        category: ["English", "Action"],
-        image: "https://images.unsplash.com/photo-1635863138275-d9b33299680b?w=400&h=600&fit=crop",
-        telegramLink: "https://t.me/askmovies/spiderman"
-    },
-    {
-        title: "Dune",
-        year: 2021,
-        quality: "HD",
-        category: ["English"],
-        image: "https://images.unsplash.com/photo-1600262300671-295cb37d1e1d?w=400&h=600&fit=crop",
-        telegramLink: "https://t.me/askmovies/dune"
-    },
-    {
-        title: "No Time To Die",
-        year: 2021,
-        quality: "HD",
-        category: ["English", "Action"],
-        image: "https://images.unsplash.com/photo-1594737625785-a6cbdabd333c?w=400&h=600&fit=crop",
-        telegramLink: "https://t.me/askmovies/bond"
-    },
-    {
-        title: "The Matrix Resurrections",
-        year: 2021,
-        quality: "PreDvd",
-        category: ["English", "Action"],
-        image: "https://images.unsplash.com/photo-1554072675-66db59dba46f?w=400&h=600&fit=crop",
-        telegramLink: "https://t.me/askmovies/matrix"
-    },
-    {
-        title: "Eternals",
-        year: 2021,
-        quality: "HD",
-        category: ["English", "Action"],
-        image: "https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?w=400&h=600&fit=crop",
-        telegramLink: "https://t.me/askmovies/eternals"
-    },
-    
-    // Additional Movies
-    {
-        title: "Sardar",
-        year: 2022,
-        quality: "HD",
-        category: ["Tamil", "Action"],
-        image: "https://images.unsplash.com/photo-1579566346927-c68383817a25?w=400&h=600&fit=crop",
-        telegramLink: "https://t.me/askmovies/sardar"
-    },
-    {
-        title: "Pathaan",
-        year: 2023,
-        quality: "HD",
-        category: ["Action"],
-        image: "https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=400&h=600&fit=crop",
-        telegramLink: "https://t.me/askmovies/pathaan"
-    },
-    {
-        title: "Black Panther 2",
-        year: 2022,
-        quality: "HD",
-        category: ["English", "Action"],
-        image: "https://images.unsplash.com/photo-1518281361980-b26bfd556770?w=400&h=600&fit=crop",
-        telegramLink: "https://t.me/askmovies/blackpanther2"
-    },
-    {
-        title: "RRR",
-        year: 2022,
-        quality: "HD",
-        category: ["Action"],
-        image: "https://images.unsplash.com/photo-1542204625-ca6c2f715f0c?w=400&h=600&fit=crop",
-        telegramLink: "https://t.me/askmovies/rrr"
-    },
-    {
-        title: "Doctor Strange 2",
-        year: 2022,
-        quality: "HD",
-        category: ["English", "Action"],
-        image: "https://images.unsplash.com/photo-1612036782180-6f0b6cd846fe?w=400&h=600&fit=crop",
-        telegramLink: "https://t.me/askmovies/doctorstrange2"
-    },
-    {
-        title: "Thor Love and Thunder",
-        year: 2022,
-        quality: "PreDvd",
-        category: ["English", "Action"],
-        image: "https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?w=400&h=600&fit=crop",
-        telegramLink: "https://t.me/askmovies/thor"
-    },
-    {
-        title: "Bullet Train",
-        year: 2022,
-        quality: "HD",
-        category: ["English", "Action"],
-        image: "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=400&h=600&fit=crop",
-        telegramLink: "https://t.me/askmovies/bullettrain"
-    },
-    {
-        title: "Thunivu",
-        year: 2023,
-        quality: "HD",
-        category: ["Tamil", "Action"],
-        image: "https://images.unsplash.com/photo-1594737625785-a6cbdabd333c?w=400&h=600&fit=crop",
-        telegramLink: "https://t.me/askmovies/thunivu"
-    },
-    {
-        title: "Ant-Man Quantumania",
-        year: 2023,
-        quality: "HD",
-        category: ["English", "Action"],
-        image: "https://images.unsplash.com/photo-1608889825103-eb5ed706fc64?w=400&h=600&fit=crop",
-        telegramLink: "https://t.me/askmovies/antman"
-    },
-    {
-        title: "Fast X",
-        year: 2023,
-        quality: "HD",
-        category: ["English", "Action"],
-        image: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=400&h=600&fit=crop",
-        telegramLink: "https://t.me/askmovies/fastx"
-    },
-    {
-        title: "Guardians Galaxy 3",
-        year: 2023,
-        quality: "HD",
-        category: ["English", "Action"],
-        image: "https://images.unsplash.com/photo-1531259683007-016a7b628fc3?w=400&h=600&fit=crop",
-        telegramLink: "https://t.me/askmovies/gotg3"
-    },
-    {
-        title: "The Flash",
-        year: 2023,
-        quality: "PreDvd",
-        category: ["English", "Action"],
-        image: "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=400&h=600&fit=crop",
-        telegramLink: "https://t.me/askmovies/flash"
-    },
-    {
-        title: "Transformers Rise",
-        year: 2023,
-        quality: "HD",
-        category: ["English", "Action"],
-        image: "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=400&h=600&fit=crop",
-        telegramLink: "https://t.me/askmovies/transformers"
-    },
-    {
-        title: "Cobra",
-        year: 2022,
-        quality: "HD",
-        category: ["Tamil", "Action"],
-        image: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400&h=600&fit=crop",
-        telegramLink: "https://t.me/askmovies/cobra"
-    },
-    {
-        title: "Prince",
-        year: 2022,
-        quality: "PreDvd",
-        category: ["Tamil"],
-        image: "https://images.unsplash.com/photo-1574267432644-f610a5804a31?w=400&h=600&fit=crop",
-        telegramLink: "https://t.me/askmovies/prince"
-    },
-    {
-        title: "Inception",
-        year: 2010,
-        quality: "HD",
-        category: ["English", "Action"],
-        image: "https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=400&h=600&fit=crop",
-        telegramLink: "https://t.me/askmovies/inception"
-    },
-    {
-        title: "Interstellar",
-        year: 2014,
-        quality: "HD",
-        category: ["English"],
-        image: "https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?w=400&h=600&fit=crop",
-        telegramLink: "https://t.me/askmovies/interstellar"
+        image: "https://images.unsplash.com/photo-1574267432644-f410f8ec2207?w=400&h=600&fit=crop",
+        telegramLink: "https://t.me/askmovies"
     },
     {
         title: "The Dark Knight",
@@ -313,280 +33,528 @@ const moviesDatabase = [
         quality: "HD",
         category: ["English", "Action"],
         image: "https://images.unsplash.com/photo-1509347528160-9a9e33742cdb?w=400&h=600&fit=crop",
-        telegramLink: "https://t.me/askmovies/darkknight"
+        telegramLink: "https://t.me/askmovies"
+    },
+    {
+        title: "Inception",
+        year: 2010,
+        quality: "HD",
+        category: ["English", "Action"],
+        image: "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=400&h=600&fit=crop",
+        telegramLink: "https://t.me/askmovies"
+    },
+    {
+        title: "Leo",
+        year: 2023,
+        quality: "HD",
+        category: ["Tamil", "Action"],
+        image: "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=400&h=600&fit=crop",
+        telegramLink: "https://t.me/askmovies"
+    },
+    {
+        title: "Jailer",
+        year: 2023,
+        quality: "HD",
+        category: ["Tamil", "Action"],
+        image: "https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=400&h=600&fit=crop",
+        telegramLink: "https://t.me/askmovies"
+    },
+    {
+        title: "Interstellar",
+        year: 2014,
+        quality: "HD",
+        category: ["English"],
+        image: "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=400&h=600&fit=crop",
+        telegramLink: "https://t.me/askmovies"
     },
     {
         title: "Avengers Endgame",
         year: 2019,
         quality: "HD",
         category: ["English", "Action"],
-        image: "https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?w=400&h=600&fit=crop",
-        telegramLink: "https://t.me/askmovies/endgame"
+        image: "https://images.unsplash.com/photo-1635805737707-575885ab0820?w=400&h=600&fit=crop",
+        telegramLink: "https://t.me/askmovies"
     },
     {
-        title: "Gladiator",
-        year: 2000,
-        quality: "HD",
-        category: ["English", "Action"],
-        image: "https://images.unsplash.com/photo-1542204625-ca6c2f715f0c?w=400&h=600&fit=crop",
-        telegramLink: "https://t.me/askmovies/gladiator"
-    },
-    {
-        title: "Baahubali 2",
-        year: 2017,
-        quality: "HD",
-        category: ["Action"],
-        image: "https://images.unsplash.com/photo-1595769816263-9b910be24d5f?w=400&h=600&fit=crop",
-        telegramLink: "https://t.me/askmovies/baahubali2"
-    },
-    {
-        title: "KGF Chapter 2",
+        title: "Ponniyin Selvan",
         year: 2022,
         quality: "HD",
-        category: ["Action"],
-        image: "https://images.unsplash.com/photo-1579566346927-c68383817a25?w=400&h=600&fit=crop",
-        telegramLink: "https://t.me/askmovies/kgf2"
+        category: ["Tamil"],
+        image: "https://images.unsplash.com/photo-1518676590629-3dcbd9c5a5c9?w=400&h=600&fit=crop",
+        telegramLink: "https://t.me/askmovies"
     },
     {
-        title: "Pushpa",
+        title: "Spider-Man No Way Home",
         year: 2021,
         quality: "HD",
-        category: ["Action"],
-        image: "https://images.unsplash.com/photo-1518676590629-3dcbd9c5a5c9?w=400&h=600&fit=crop",
-        telegramLink: "https://t.me/askmovies/pushpa"
+        category: ["English", "Action"],
+        image: "https://images.unsplash.com/photo-1635863138275-d9b33299680b?w=400&h=600&fit=crop",
+        telegramLink: "https://t.me/askmovies"
     },
     {
-        title: "Shang-Chi",
-        year: 2021,
+        title: "Thunivu",
+        year: 2023,
+        quality: "PreDvd",
+        category: ["Tamil", "Action"],
+        image: "https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?w=400&h=600&fit=crop",
+        telegramLink: "https://t.me/askmovies"
+    },
+    {
+        title: "Top Gun Maverick",
+        year: 2022,
+        quality: "HD",
+        category: ["English", "Action"],
+        image: "https://images.unsplash.com/photo-1583482183085-0e5c1b6e8e10?w=400&h=600&fit=crop",
+        telegramLink: "https://t.me/askmovies"
+    },
+    {
+        title: "Jawan",
+        year: 2023,
+        quality: "HD",
+        category: ["Tamil", "Action"],
+        image: "https://images.unsplash.com/photo-1534447677768-be436bb09401?w=400&h=600&fit=crop",
+        telegramLink: "https://t.me/askmovies"
+    },
+    {
+        title: "Dunkirk",
+        year: 2017,
+        quality: "HD",
+        category: ["English", "Action"],
+        image: "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=400&h=600&fit=crop",
+        telegramLink: "https://t.me/askmovies"
+    },
+    {
+        title: "Maaveeran",
+        year: 2023,
+        quality: "HD",
+        category: ["Tamil", "Action"],
+        image: "https://images.unsplash.com/photo-1616530940355-351fabd9524b?w=400&h=600&fit=crop",
+        telegramLink: "https://t.me/askmovies"
+    },
+    {
+        title: "John Wick 4",
+        year: 2023,
+        quality: "HD",
+        category: ["English", "Action"],
+        image: "https://images.unsplash.com/photo-1542204165-65bf26472b9b?w=400&h=600&fit=crop",
+        telegramLink: "https://t.me/askmovies"
+    },
+    {
+        title: "Sardar",
+        year: 2022,
+        quality: "HD",
+        category: ["Tamil", "Action"],
+        image: "https://images.unsplash.com/photo-1611511450912-0c81f86d5b2e?w=400&h=600&fit=crop",
+        telegramLink: "https://t.me/askmovies"
+    },
+    {
+        title: "Oppenheimer",
+        year: 2023,
+        quality: "PreDvd",
+        category: ["English"],
+        image: "https://images.unsplash.com/photo-1608889335941-32ac5f2041b9?w=400&h=600&fit=crop",
+        telegramLink: "https://t.me/askmovies"
+    },
+    {
+        title: "Kaithi",
+        year: 2019,
+        quality: "HD",
+        category: ["Tamil", "Action"],
+        image: "https://images.unsplash.com/photo-1574267432553-4b4628081c31?w=400&h=600&fit=crop",
+        telegramLink: "https://t.me/askmovies"
+    },
+    {
+        title: "Mission Impossible 7",
+        year: 2023,
+        quality: "HD",
+        category: ["English", "Action"],
+        image: "https://images.unsplash.com/photo-1594908900066-3f47337549d8?w=400&h=600&fit=crop",
+        telegramLink: "https://t.me/askmovies"
+    },
+    {
+        title: "Kantara",
+        year: 2022,
+        quality: "HD",
+        category: ["Tamil"],
+        image: "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=400&h=600&fit=crop",
+        telegramLink: "https://t.me/askmovies"
+    },
+    {
+        title: "The Batman",
+        year: 2022,
         quality: "HD",
         category: ["English", "Action"],
         image: "https://images.unsplash.com/photo-1608889825103-eb5ed706fc64?w=400&h=600&fit=crop",
-        telegramLink: "https://t.me/askmovies/shangchi"
+        telegramLink: "https://t.me/askmovies"
     },
     {
-        title: "Venom 2",
-        year: 2021,
-        quality: "HD",
-        category: ["English", "Action"],
-        image: "https://images.unsplash.com/photo-1611419010196-a425a5b4e3d4?w=400&h=600&fit=crop",
-        telegramLink: "https://t.me/askmovies/venom2"
-    },
-    {
-        title: "Aquaman",
-        year: 2018,
-        quality: "HD",
-        category: ["English", "Action"],
-        image: "https://images.unsplash.com/photo-1616530940355-351fabd9524b?w=400&h=600&fit=crop",
-        telegramLink: "https://t.me/askmovies/aquaman"
-    },
-    {
-        title: "Wonder Woman",
-        year: 2017,
-        quality: "HD",
-        category: ["English", "Action"],
-        image: "https://images.unsplash.com/photo-1534447677768-be436bb09401?w=400&h=600&fit=crop",
-        telegramLink: "https://t.me/askmovies/wonderwoman"
-    },
-    {
-        title: "Man of Steel",
-        year: 2013,
-        quality: "HD",
-        category: ["English", "Action"],
-        image: "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=400&h=600&fit=crop",
-        telegramLink: "https://t.me/askmovies/manofsteel"
-    },
-    {
-        title: "Vikram Vedha",
+        title: "Vikrant Rona",
         year: 2022,
         quality: "HD",
         category: ["Tamil", "Action"],
-        image: "https://images.unsplash.com/photo-1585951237318-9ea5e175b891?w=400&h=600&fit=crop",
-        telegramLink: "https://t.me/askmovies/vikramvedha"
+        image: "https://images.unsplash.com/photo-1505686994434-e3cc5abf1330?w=400&h=600&fit=crop",
+        telegramLink: "https://t.me/askmovies"
     },
     {
-        title: "Sarpatta Parambarai",
-        year: 2021,
+        title: "Avatar 2",
+        year: 2022,
+        quality: "HD",
+        category: ["English", "Action"],
+        image: "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?w=400&h=600&fit=crop",
+        telegramLink: "https://t.me/askmovies"
+    },
+    // Additional movies to reach 25+ for pagination demo
+    {
+        title: "Beast",
+        year: 2022,
         quality: "HD",
         category: ["Tamil", "Action"],
-        image: "https://images.unsplash.com/photo-1608889476561-6242cfdbf622?w=400&h=600&fit=crop",
-        telegramLink: "https://t.me/askmovies/sarpatta"
+        image: "https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?w=400&h=600&fit=crop",
+        telegramLink: "https://t.me/askmovies"
+    },
+    {
+        title: "Dune",
+        year: 2021,
+        quality: "HD",
+        category: ["English", "Action"],
+        image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=600&fit=crop",
+        telegramLink: "https://t.me/askmovies"
+    },
+    {
+        title: "Pathaan",
+        year: 2023,
+        quality: "PreDvd",
+        category: ["Tamil", "Action"],
+        image: "https://images.unsplash.com/photo-1533158326339-7f3cf2404354?w=400&h=600&fit=crop",
+        telegramLink: "https://t.me/askmovies"
     }
-].map((movie, index) => ({ id: index + 1, ...movie }));
+];
 
-// ===================================
-// GLOBAL STATE MANAGEMENT
-// ===================================
-let currentPage = 1;
-const moviesPerPage = 20;
-let filteredMovies = [...moviesDatabase];
-let selectedCategory = 'All';
-let searchQuery = '';
+// ==========================================
+// AUTO ID GENERATOR
+// ==========================================
 
-// ===================================
+// Automatically assign unique IDs to each movie
+const movies = moviesDatabase.map((movie, index) => ({
+    ...movie,
+    id: index + 1
+}));
+
+// ==========================================
+// GLOBAL STATE
+// ==========================================
+
+let state = {
+    currentPage: 1,
+    moviesPerPage: 20,
+    selectedCategory: 'All',
+    searchQuery: '',
+    filteredMovies: [...movies]
+};
+
+// ==========================================
+// DOM ELEMENTS
+// ==========================================
+
+const movieGrid = document.getElementById('movieGrid');
+const pagination = document.getElementById('pagination');
+const noResults = document.getElementById('noResults');
+const searchInput = document.getElementById('searchInput');
+const searchInputMobile = document.getElementById('searchInputMobile');
+const filterButtons = document.querySelectorAll('.filter-btn');
+const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+const mobileSearch = document.getElementById('mobileSearch');
+
+// ==========================================
 // INITIALIZATION
-// ===================================
-document.addEventListener('DOMContentLoaded', () => {
-    initializeApp();
-});
+// ==========================================
 
-function initializeApp() {
-    renderMovies();
-    renderPagination();
-    updateResultsInfo();
+function init() {
+    console.log('🎬 AskMovies initialized successfully!');
+    console.log(`📊 Total movies loaded: ${movies.length}`);
+    console.log(`🎯 Movies with auto-generated IDs: ${movies.every(m => m.id)}`);
+    
+    // Initial render
+    applyFilters();
+    
+    // Setup event listeners
     setupEventListeners();
 }
 
-// ===================================
-// EVENT LISTENERS SETUP
-// ===================================
 function setupEventListeners() {
-    // Search functionality
-    const searchInput = document.getElementById('searchInput');
+    // Search functionality (both desktop and mobile)
     searchInput.addEventListener('input', handleSearch);
+    searchInputMobile.addEventListener('input', handleSearch);
     
     // Category filter buttons
-    const categoryButtons = document.querySelectorAll('.category-btn');
-    categoryButtons.forEach(btn => {
+    filterButtons.forEach(btn => {
         btn.addEventListener('click', handleCategoryFilter);
     });
     
     // Mobile menu toggle
-    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
-    const categoryFilters = document.getElementById('categoryFilters');
-    
-    if (mobileMenuToggle) {
-        mobileMenuToggle.addEventListener('click', () => {
-            categoryFilters.classList.toggle('show');
-        });
-    }
-    
-    // Search toggle button (mobile)
-    const searchToggleBtn = document.querySelector('.search-toggle-btn');
-    const filterWrapper = document.querySelector('.filter-wrapper');
-    const filterSection = document.querySelector('.filter-section');
-    
-    if (searchToggleBtn) {
-        searchToggleBtn.addEventListener('click', () => {
-            filterWrapper.classList.toggle('show');
-            if (filterWrapper.classList.contains('show')) {
-                setTimeout(() => {
-                    filterSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    searchInput.focus();
-                }, 100);
-            }
-        });
-    }
+    mobileMenuToggle.addEventListener('click', toggleMobileMenu);
 }
 
-// ===================================
+// ==========================================
 // FILTER ENGINE
-// ===================================
+// ==========================================
+
 function applyFilters() {
-    // Reset to first page when filters change
-    currentPage = 1;
-    
     // Start with all movies
-    filteredMovies = moviesDatabase.filter(movie => {
-        // Apply category filter
-        const categoryMatch = selectedCategory === 'All' || 
-                             movie.category.includes(selectedCategory);
-        
-        // Apply search filter (case-insensitive)
-        const searchMatch = movie.title.toLowerCase().includes(searchQuery.toLowerCase());
-        
-        // Both conditions must be true
-        return categoryMatch && searchMatch;
-    });
+    let result = [...movies];
     
-    // Re-render everything
+    // Apply category filter
+    if (state.selectedCategory !== 'All') {
+        result = result.filter(movie => 
+            movie.category.includes(state.selectedCategory)
+        );
+    }
+    
+    // Apply search filter
+    if (state.searchQuery.trim() !== '') {
+        const query = state.searchQuery.toLowerCase().trim();
+        result = result.filter(movie => 
+            movie.title.toLowerCase().includes(query)
+        );
+    }
+    
+    // Update filtered movies
+    state.filteredMovies = result;
+    
+    // Reset to first page when filters change
+    state.currentPage = 1;
+    
+    // Render results
     renderMovies();
     renderPagination();
-    updateResultsInfo();
 }
 
-// ===================================
-// SEARCH FUNCTIONALITY
-// ===================================
-function handleSearch(event) {
-    searchQuery = event.target.value.trim();
-    applyFilters();
-}
+// ==========================================
+// RENDER FUNCTION
+// ==========================================
 
-// ===================================
-// CATEGORY FILTER FUNCTIONALITY
-// ===================================
-function handleCategoryFilter(event) {
-    // Remove active class from all buttons
-    document.querySelectorAll('.category-btn').forEach(btn => {
-        btn.classList.remove('active');
+function renderMovies() {
+    // Clear grid
+    movieGrid.innerHTML = '';
+    
+    // Check if we have results
+    if (state.filteredMovies.length === 0) {
+        noResults.style.display = 'block';
+        pagination.style.display = 'none';
+        return;
+    }
+    
+    noResults.style.display = 'none';
+    pagination.style.display = 'flex';
+    
+    // Calculate pagination
+    const startIndex = (state.currentPage - 1) * state.moviesPerPage;
+    const endIndex = startIndex + state.moviesPerPage;
+    const moviesToDisplay = state.filteredMovies.slice(startIndex, endIndex);
+    
+    // Create movie cards
+    moviesToDisplay.forEach(movie => {
+        const card = createMovieCard(movie);
+        movieGrid.appendChild(card);
     });
     
-    // Add active class to clicked button
-    event.target.classList.add('active');
+    // Add fade-in animation
+    movieGrid.classList.remove('fade-in');
+    void movieGrid.offsetWidth; // Trigger reflow
+    movieGrid.classList.add('fade-in');
     
-    // Update selected category
-    selectedCategory = event.target.getAttribute('data-category');
-    
-    // Apply filters
-    applyFilters();
+    // Scroll to top smoothly
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
 }
 
-// ===================================
-// RENDER MOVIES FUNCTION
-// ===================================
-function renderMovies() {
-    const movieGrid = document.getElementById('movieGrid');
-    const noResults = document.getElementById('noResults');
-    
-    // Add fade-out effect
-    movieGrid.classList.add('fade-out');
-    
-    setTimeout(() => {
-        // Clear existing content
-        movieGrid.innerHTML = '';
-        
-        // Calculate pagination
-        const startIndex = (currentPage - 1) * moviesPerPage;
-        const endIndex = startIndex + moviesPerPage;
-        const moviesToShow = filteredMovies.slice(startIndex, endIndex);
-        
-        // Show/hide no results message
-        if (filteredMovies.length === 0) {
-            movieGrid.style.display = 'none';
-            noResults.style.display = 'block';
-        } else {
-            movieGrid.style.display = 'grid';
-            noResults.style.display = 'none';
-            
-            // Render movie cards
-            moviesToShow.forEach(movie => {
-                const movieCard = createMovieCard(movie);
-                movieGrid.appendChild(movieCard);
-            });
-        }
-        
-        // Remove fade-out effect
-        movieGrid.classList.remove('fade-out');
-        
-        // Scroll to top smoothly
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    }, 300);
-}
+// ==========================================
+// CREATE MOVIE CARD
+// ==========================================
 
-// ===================================
-// CREATE MOVIE CARD FUNCTION
-// ===================================
 function createMovieCard(movie) {
     const card = document.createElement('div');
     card.className = 'movie-card';
-    card.onclick = () => openTelegramLink(movie.telegramLink);
+    card.onclick = () => openMovie(movie);
+    
+    // Create category tags
+    const categoryTags = movie.category.map(cat => 
+        `<span class="category-tag">${cat}</span>`
+    ).join('');
     
     card.innerHTML = `
         <div class="movie-poster">
             <img src="${movie.image}" alt="${movie.title}" loading="lazy">
-            <span class="quality-badge">${movie.quality}</span>
+            <div class="quality-badge">${movie.quality}</div>
             <div class="watch-overlay">
-                <button class="watch-btn">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M8 5v14l11-7z"/>
+                <button class="watch-btn">WATCH NOW</button>
+            </div>
+        </div>
+        <div class="movie-info">
+            <h3 class="movie-title">${movie.title}</h3>
+            <p class="movie-year">${movie.year}</p>
+            <div class="movie-categories">
+                ${categoryTags}
+            </div>
+        </div>
+    `;
+    
+    return card;
+}
+
+function openMovie(movie) {
+    console.log(`🎬 Opening movie: ${movie.title} (ID: ${movie.id})`);
+    window.open(movie.telegramLink, '_blank');
+}
+
+// ==========================================
+// PAGINATION
+// ==========================================
+
+function renderPagination() {
+    pagination.innerHTML = '';
+    
+    const totalPages = Math.ceil(state.filteredMovies.length / state.moviesPerPage);
+    
+    // Don't show pagination if only 1 page or no results
+    if (totalPages <= 1) {
+        pagination.style.display = 'none';
+        return;
+    }
+    
+    pagination.style.display = 'flex';
+    
+    // Previous button
+    const prevBtn = createPageButton('Previous', state.currentPage - 1, state.currentPage === 1);
+    pagination.appendChild(prevBtn);
+    
+    // Page numbers
+    const pageNumbers = getPageNumbers(state.currentPage, totalPages);
+    pageNumbers.forEach(pageNum => {
+        if (pageNum === '...') {
+            const ellipsis = document.createElement('span');
+            ellipsis.className = 'page-ellipsis';
+            ellipsis.textContent = '...';
+            pagination.appendChild(ellipsis);
+        } else {
+            const pageBtn = createPageButton(pageNum, pageNum, false, pageNum === state.currentPage);
+            pagination.appendChild(pageBtn);
+        }
+    });
+    
+    // Next button
+    const nextBtn = createPageButton('Next', state.currentPage + 1, state.currentPage === totalPages);
+    pagination.appendChild(nextBtn);
+}
+
+function createPageButton(text, pageNum, disabled, active = false) {
+    const btn = document.createElement('button');
+    btn.className = 'page-btn';
+    btn.textContent = text;
+    btn.disabled = disabled;
+    
+    if (active) {
+        btn.classList.add('active');
+    }
+    
+    if (!disabled) {
+        btn.onclick = () => goToPage(pageNum);
+    }
+    
+    return btn;
+}
+
+function getPageNumbers(current, total) {
+    const pages = [];
+    
+    if (total <= 7) {
+        // Show all pages if 7 or fewer
+        for (let i = 1; i <= total; i++) {
+            pages.push(i);
+        }
+    } else {
+        // Always show first page
+        pages.push(1);
         
+        if (current > 3) {
+            pages.push('...');
+        }
+        
+        // Show pages around current
+        const start = Math.max(2, current - 1);
+        const end = Math.min(total - 1, current + 1);
+        
+        for (let i = start; i <= end; i++) {
+            pages.push(i);
+        }
+        
+        if (current < total - 2) {
+            pages.push('...');
+        }
+        
+        // Always show last page
+        pages.push(total);
+    }
+    
+    return pages;
+}
+
+function goToPage(pageNum) {
+    state.currentPage = pageNum;
+    renderMovies();
+    renderPagination();
+}
+
+// ==========================================
+// SEARCH
+// ==========================================
+
+function handleSearch(e) {
+    state.searchQuery = e.target.value;
+    
+    // Sync both search inputs
+    if (e.target === searchInput) {
+        searchInputMobile.value = e.target.value;
+    } else {
+        searchInput.value = e.target.value;
+    }
+    
+    applyFilters();
+}
+
+// ==========================================
+// CATEGORY FILTER
+// ==========================================
+
+function handleCategoryFilter(e) {
+    const category = e.target.dataset.category;
+    state.selectedCategory = category;
+    
+    // Update active button
+    filterButtons.forEach(btn => btn.classList.remove('active'));
+    e.target.classList.add('active');
+    
+    applyFilters();
+}
+
+// ==========================================
+// MOBILE MENU
+// ==========================================
+
+function toggleMobileMenu() {
+    mobileMenuToggle.classList.toggle('active');
+    mobileSearch.classList.toggle('show');
+}
+
+// ==========================================
+// START APPLICATION
+// ==========================================
+
+// Initialize when DOM is ready
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+} else {
+    init();
+    }
