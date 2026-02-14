@@ -1,1 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AskMovies - Your Cinema Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Ask<span>Movies</span></h1>
+                    <div class="logo-subtitle">Your Cinema Portal</div>
+                </div>
+                
+                <!-- Desktop Search -->
+                <div class="search-container desktop-search">
+                    <input 
+                        type="text" 
+                        id="searchInput" 
+                        class="search-input" 
+                        placeholder="Search for movies..."
+                    >
+                    <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </div>
 
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+            <!-- Mobile Search -->
+            <div class="search-container mobile-search" id="mobileSearch">
+                <input 
+                    type="text" 
+                    id="searchInputMobile" 
+                    class="search-input" 
+                    placeholder="Search for movies..."
+                >
+                <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.35-4.35"></path>
+                </svg>
+            </div>
+        </div>
+    </header>
+
+    <!-- Category Filter -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-wrapper" id="filterWrapper">
+                <button class="filter-btn active" data-category="All">All</button>
+                <button class="filter-btn" data-category="Tamil">Tamil</button>
+                <button class="filter-btn" data-category="English">English</button>
+                <button class="filter-btn" data-category="Action">Action</button>
+                <button class="filter-btn" data-category="HD">HD</button>
+                <button class="filter-btn" data-category="PreDvd">PreDvd</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Movies Grid -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Movie Grid -->
+            <div class="movie-grid" id="movieGrid">
+                <!-- Movies will be rendered here -->
+            </div>
+
+            <!-- No Results Message -->
+            <div class="no-results" id="noResults" style="display: none;">
+                <div class="no-results-icon">
+                    <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M9.5 9.5L19 19M14.5 5.5L19 10" stroke-linecap="round"/>
+                        <path d="M2 12C2 17.523 6.477 22 12 22C17.523 22 22 17.523 22 12C22 6.477 17.523 2 12 2C6.477 2 2 6.477 2 12Z"/>
+                    </svg>
+                </div>
+                <h3>No Movies Found</h3>
+                <p>Try adjusting your search or filter to find what you're looking for.</p>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination" id="pagination">
+                <!-- Pagination will be rendered here -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 AskMovies. All rights reserved.</p>
+            <p class="footer-tagline">Stream. Watch. Enjoy.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
