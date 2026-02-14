@@ -239,6 +239,8 @@ body {
     transition: all var(--transition-smooth);
     position: relative;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
 }
 
 .movie-card:hover {
@@ -246,11 +248,12 @@ body {
     box-shadow: 0 12px 30px rgba(229, 9, 20, 0.3);
 }
 
-/* Movie Poster */
+/* Movie Poster - FIXED */
 .movie-poster {
     position: relative;
     width: 100%;
-    padding-top: 150%; /* 2:3 aspect ratio */
+    height: 0;
+    padding-bottom: 150%; /* 2:3 aspect ratio */
     overflow: hidden;
     background-color: var(--secondary-bg);
 }
@@ -328,6 +331,9 @@ body {
 /* Movie Info */
 .movie-info {
     padding: 1rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .movie-title {
@@ -664,4 +670,4 @@ body {
 /* Smooth scroll behavior */
 html {
     scroll-behavior: smooth;
-       }
+   }
