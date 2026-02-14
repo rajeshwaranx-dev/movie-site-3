@@ -553,11 +553,14 @@ body {
     
     .filter-wrapper {
         display: none;
-        gap: 1rem;
     }
     
     .filter-wrapper.show {
         display: flex;
+    }
+    
+    .filter-wrapper {
+        gap: 1rem;
     }
     
     .category-filters {
