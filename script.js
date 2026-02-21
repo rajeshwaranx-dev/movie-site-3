@@ -116,14 +116,6 @@ const moviesDatabase = [
         telegramLink: "https://t.me/askmovies"
     },
     {
-        title: "Thunivu",
-        year: 2023,
-        quality: "PreDvd",
-        category: ["Tamil", "Action"],
-        image: "https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?w=400&h=600&fit=crop",
-        telegramLink: "https://t.me/askmovies"
-    },
-    {
         title: "Top Gun Maverick",
         year: 2022,
         quality: "HD",
