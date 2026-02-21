@@ -4,6 +4,30 @@
 
 const moviesDatabase = [
     {
+        title: "Pookie",
+        year: "2025",
+        quality: "PreDvd",
+        category: ["Tamil", "PreDvd"],
+        image: "https://m.media-amazon.com/images/M/MV5BN2QwNzg5YTgtN2QwNy00ZTZkLTg2YjItZTk2NmY1Y2M4NmE3XkEyXkFqcGc@._V1_.jpg",
+        telegramLink: "https://askmovies.lcubots.news/?start=fs_MjExODM="
+    },
+    {
+        title: "Thunivu",
+        year: "2023",
+        quality: "HD",
+        category: ["Tamil", "Action"],
+        image: "https://image.tmdb.org/t/p/w1280/q2FGtGWg5MzQo2yhGPEPrRrdw4V.jpg",
+        telegramLink: "https://askmovies.lcubots.news/?start=fs_MjExOTM="
+    },
+    {
+        title: "Leo",
+        year: "2023",
+        quality: "HD",
+        category: ["Tamil", "Action"],
+        image: "https://image.tmdb.org/t/p/w1280/2XUHC4lp3tDsgfFLFygNZ2x2Um9.jpg",
+        telegramLink: "https://askmovies.lcubots.news/?start=fs_MjEyMDA="
+    }
+    {
         title: "Master",
         year: 2021,
         quality: "HD",
